@@ -1,4 +1,8 @@
 import './App.css'
+import profileImage from './assets/er.png'
+import project1Image from './assets/Create Account.png'
+import project2Image from './assets/clocky.png'
+import project3Image from './assets/eme.png'
 
 function App() {
   return (
@@ -43,7 +47,7 @@ function App() {
             </div>
             <div className="hero-image">
               <div className="image-container">
-                <img src="/src/assets/er.png" alt="Profile" />
+                <img src={profileImage} alt="Profile" />
               </div>
             </div>
           </div>
@@ -108,7 +112,7 @@ function App() {
           <div className="project-grid">
             <div className="project-card">
               <div className="project-image">
-                <img src="/src/assets/Create Account.png" alt="Project 1" />
+                <img src={project1Image} alt="Project 1" />
                 <div className="project-overlay">
                   <div className="project-links">
                     <a href="#" target="_blank" rel="noopener noreferrer"><i className="fas fa-external-link-alt"></i></a>
@@ -128,7 +132,7 @@ function App() {
             </div>
             <div className="project-card">
               <div className="project-image">
-                <img src="/src/assets/clocky.png" alt="Project 2" />
+                <img src={project2Image} alt="Project 2" />
                 <div className="project-overlay">
                   <div className="project-links">
                     <a href="#" target="_blank" rel="noopener noreferrer"><i className="fas fa-external-link-alt"></i></a>
@@ -148,7 +152,7 @@ function App() {
             </div>
             <div className="project-card">
               <div className="project-image">
-                <img src="/src/assets/eme.png" alt="Project 3" />
+                <img src={project3Image} alt="Project 3" />
                 <div className="project-overlay">
                   <div className="project-links">
                     <a href="#" target="_blank" rel="noopener noreferrer"><i className="fas fa-external-link-alt"></i></a>
