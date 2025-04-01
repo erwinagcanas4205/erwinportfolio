@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: portfolio
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run preview
+    envVars:
+      - key: NODE_VERSION
+        value: 18.0.0
+    healthCheckPath: /
+    autoDeploy: true
+    plan: free
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html 
